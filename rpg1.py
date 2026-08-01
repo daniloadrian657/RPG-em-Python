@@ -1,7 +1,7 @@
 from time import sleep
 
 
-def escrever(texto, velocidade=0.02):
+def escrever(texto, velocidade=0.00):
     for letra in texto:
         print(letra, end="", flush=True)
         sleep(velocidade)
@@ -66,16 +66,17 @@ if decisao0 == "2":
             desconhecida não parece ser uma boa ideia. Você foi incisivo
             quando quebrou preciosos, tentou-o com calma e a criatura o
             buscou... Que burrice..."
-            Final ruim — "Pacifista"  [FIM]\033[m''')
+            - FINAL RUIM -
+            "Pacifista"  [FIM]\033[m''')
 
             exit()
         elif decisaoa1 == "2":
             escrever ('''
             "Você se abaixa lentamente para pegar uma barra de ferro que
             estava no chão, assim que a pegar, a criatura parte pra cima.
-            Em certo ponto, você consegue se desenvolver e desenvolver
-            mordê-la em cheio na cabeça, mas ela consegue morder seu braço
-            antes de cair morto no chão... 'Droga! isso dói' Ouvesse
+            Em certo ponto, você consegue se desvenchilhar e acerta-la
+            na cabeça, mas ela consegue morder seu braço
+            antes de cair morta no chão... 'Droga! isso dói' Ouvesse
             barulhos pelos corredores do lugar, a criatura não estava
             sozinha..."
             O que fazer agora?''')
@@ -110,8 +111,8 @@ if decisao0 == "2":
                         Porém, a infecção foi mais rápida que o previsto, você se transforma numa besta
                         sedenta por sangue e acaba matando todos do local.
                         Pelo menos o seu braço está no lugar.
-                        Final ruim
-                        -Medo de agulhas-\033[m''')
+                        -FINAL RUIM-
+                        -MEDO DE AGULHAS-\033[m''')
 
                         exit()
                 elif decisaoa2 == "2":
@@ -130,7 +131,7 @@ if decisao0 == "2":
                     [3] tomar o protótipo 2
                     [4] tomar o protótipo 3
                     Digite sua escolha: \033[m''')
-                    if decisaoa2 == "1":
+                    if decisaoa3 == "1":
                         escrever ('''\033[31m
                         Depois não criar coragem para tentar se salvar,
                         o invitável acontece. Você se transforma em um infectado.
@@ -139,7 +140,7 @@ if decisao0 == "2":
                         FINAL RUIM
                         -ALTRUISTA-\033[m''')
                         exit()
-                    elif decisaoa2 == "2":
+                    elif decisaoa3 == "2":
                         escrever ('''\033[34m
                         O Protótipo 1 era um mutagenico que intensificou
                         e estabilizou a mutação. Você virou um mutante, mas mantendo
@@ -147,7 +148,7 @@ if decisao0 == "2":
                         Final neutro
                         -HOMEM FERA-\033[m''')
                         exit()
-                    elif decisaoa2 == "3":
+                    elif decisaoa3 == "3":
                         escrever ('''\033[34m
                         O Prototipo 2 era uma jarro com água envelhecida por 5 anos.
                         Você tomou, teve uma infecção e virou um monstro mutante graças 
@@ -155,8 +156,8 @@ if decisao0 == "2":
                         FINAL RUIM
                         - SORTE NO AMOR-\033[m''')
                         exit()
-                    elif decisaoa2 == "4":
-                        escrever ('''
+                    elif decisaoa3 == "4":
+                        escrever ('''\033[32m
                         FINAL "BOM"
                         -Soltaram a carta-
                         O Protótipo 3 era uma cura estabilizadora! Você se curou, parece um milagre!
@@ -181,7 +182,9 @@ while True:
         Não havia nada por perto que pudesse usar como arma,
         então você achou que era uma boa ideia atacar de mãos vazias.
         O humano mutante revidou e matou você e seu cachorro!
-        Querer matar tudo que vê pela frente não é muito legal.\033[m''')
+        Querer matar tudo que vê pela frente não é muito legal.
+        -FINAL RUIM-
+        O BICHÃO MESMO\033[m''')
 
         exit()
     elif decisaob2 == "2":
