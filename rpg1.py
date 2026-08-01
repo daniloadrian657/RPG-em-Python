@@ -1,7 +1,7 @@
 from time import sleep
 
 
-def escrever(texto, velocidade=0.00):
+def escrever(texto, velocidade=0.02):
     for letra in texto:
         print(letra, end="", flush=True)
         sleep(velocidade)
