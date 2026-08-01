@@ -1,6 +1,3 @@
-from time import sleep
-import sys
-
 print('''                            
                                   \033[33mAno 2067\033[m
 
@@ -68,5 +65,56 @@ if decisao0 == "2":
             mordê-la em cheio na cabeça, mas ela consegue morder seu braço
             antes de cair morto no chão... 'Droga! isso dói' Ouvesse
             barulhos pelos corredores do lugar, a criatura não estava
-            sozinha..."''')
-            break
+            sozinha..."
+            O que fazer agora?''')
+            decisaoa2 = input ('''\033[34m
+            [1]Tratar o ferimento
+            [2]Continuar explorando
+            Digite sua escolha: \033[m''')
+            while  True:
+                if decisaoa2 == "1":
+                    print('''Você volta para a cidade onde encontra ajuda de outros sobreviventes,
+                    que o levam para um abrigo. Entretanto, seu braço foi comprometido.
+                    Os sobreviventes recomendam cortar fora antes que você vire um infectado.''')
+                elif decisaoa2 == "2":
+                    print('''Enquanto explorava o prédio você começa a sentir tontura.
+                    A mordida estava the afetando... não conseguiria continuar assim.
+                    Um pouco mais em frente você encontra uma sala com soros experimentais...
+                    havia 3 soros. Você começa a pensar se vale a tentativa.
+                    O que fazer?''')
+                    while True:
+                        decisaoa3 = input ('''\033[34m
+                        [1] Não tomar nenhum
+                        [2] tomar o protótipo 1
+                        [3] tomar o protótipo 2
+                        [4] tomar o protótipo 3
+                        Digite sua escolha: \033[m''')
+                        if decisaoa2 == "1":
+                            print('''\033[31mDepois não criar coragem para tentar se salvar,
+                            o invitável acontece. Você se transforma em um infectado.
+                            Pouco antes disso acontecer você se prende a uma mesa para não
+                            machucar ninguém que pudesse querer se aventurar por lá
+                            FINAL RUIM
+                            -ALTRUISTA-\033[m''')
+                            exit()
+                        elif decisaoa2 == "2":
+                            print('''\033[34mO Protótipo 1 era um mutagenico que intensificou
+                            e estabilizou a mutação. Você virou um mutante, mas mantendo
+                            a sua consciência... Isso é bom... certo?
+                            Final neutro
+                            -HOMEM FERA-\033[m''')
+                        elif decisaoa2 == "3":
+                            print('''\033[34mO Prototipo 2 era uma jarro com água envelhecida por 5 anos.
+                            Você tomou, teve uma infecção e virou um monstro mutante graças 
+                            ao seu ferimento anterior
+                            FINAL RUIM
+                            - SORTE NO AMOR-\033[m''')
+                        elif decisaoa2 == "4":
+                            print('''Final "bom"
+                            -Soltaram a carta-
+                            O Protótipo 3 era uma cura estabilizadora! Você se curou, parece um milagre!
+                            Nesta mesma sala você acha recursos de emergência, não podia ser melhor! 
+                            Com os novos equipamentos poderiam viver tranquilamente, depois de alguns anos
+                            você finalmente conseguiu replicar a cura para todos os outros infectados,
+                            e a sociedade pode voltar ao normal como era antes, final feliz!''')
+
