@@ -6,14 +6,16 @@ def escrever(texto, velocidade=0.02):
         print(letra, end="", flush=True)
         sleep(velocidade)
     print()
+
+
 while True:
     escrever('''                                  \033[33mAno 2067\033[m
-    
+
     Uma coorporação chamada BREVES EAR COMPANY (BEC) havia desenvolvido uma arma química
     com o propósito de dar fim a terceira guerra que assolava o mundo. Mas nada ocorreu 
     como planejado... uma falha de calculo fez com que o mundo se afunda-se em uma era de
     trevas... muitas pessoas morreram e as que sobreviveram tiveram suas aparências desfiguradas.
-    ''',)
+    ''', )
 
     escrever('''Antes do colapso ouveram rumores sobre a possivel catastrofe eminente, muitos não 
     deram ouvidos. Por outro lado, eu me isolei no subterrâneo... montei um bunker e me escondi
@@ -22,7 +24,7 @@ while True:
     estavam acabando e nos restava apenas uma opção... explorar o mundo devastado 5 anos após o ocorrido...
     ''')
 
-    decisao0 =input('''Ao sairem pela escotilha você percebe que a muito tempo não vê a luz do sol, ela o incomoda
+    decisao0 = input('''Ao sairem pela escotilha você percebe que a muito tempo não vê a luz do sol, ela o incomoda
     aos olhos. Por sorte está no fim da tarde, logo mais a noite cairá, porém não parece que haverá luz pelo
     caminho "é melhor eu me apressar".
     \033[34m
@@ -31,13 +33,12 @@ while True:
     [3] Explorar a cidade
     Digite sua escolha: \033[m''')
     if decisao0 == "1":
-        escrever ('''\033[31m
+        escrever('''\033[31m
         Você decidiu permanecer no Bunker como um covarde e logo a comida acaba.
         Você e o Ouvido se olham como se fossem a presa um do outro. "Talvez ele esteja
         pensando o mesmo que eu"
-    
+
         Final ruim -Conversa com a fome-\033[31m''')
-        exit()
     elif decisao0 == "2":
         print()
     elif decisao0 == "3":
@@ -56,9 +57,9 @@ while True:
                 [1] "Se aproximar com calma"
                 [2] "Atacar!"
                 Digite sua escolha: \033[m''')
-        if decisaoa1 not in ["1","2"]:
+        if decisaoa1 not in ["1", "2"]:
             while True:
-                if decisaoa1 in ["1","2"]:
+                if decisaoa1 in ["1", "2"]:
                     break
                 else:
                     print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
@@ -68,7 +69,7 @@ while True:
                     Digite sua escolha: \033[m''')
 
         if decisaoa1 == "1":
-         escrever('''\033[31mEm um mundo pós apocaliptico, tentar se aproximar de uma criatura
+            escrever('''\033[31mEm um mundo pós apocaliptico, tentar se aproximar de uma criatura
           desconhecida não parece ser uma boa ideia. Você não foi incisivo quando precisava, 
           tentou ir com calma e a criatura o matou!
          Que burrice...
@@ -155,7 +156,7 @@ while True:
                         if decisaoa2 in ["1", "2", "3", "4"]:
                             break
                 if decisaoa3 == "1":
-                    escrever ('''\033[31m
+                    escrever('''\033[31m
                     Depois não criar coragem para tentar se salvar,
                     o invitável acontece. Você se transforma em um infectado.
                     Pouco antes disso acontecer você se prende a uma mesa para não
@@ -163,21 +164,21 @@ while True:
                     FINAL RUIM
                     -ALTRUISTA-\033[m''')
                 elif decisaoa3 == "2":
-                    escrever ('''\033[34m
+                    escrever('''\033[34m
                     O Protótipo 1 era um mutagenico que intensificou
                     e estabilizou a mutação. Você virou um mutante, mas mantendo
                     a sua consciência... Isso é bom... certo?
                     Final neutro
                     -HOMEM FERA-\033[m''')
                 elif decisaoa3 == "3":
-                    escrever ('''\033[34m
+                    escrever('''\033[34m
                     O Prototipo 2 era uma jarro com água envelhecida por 5 anos.
                     Você tomou, teve uma infecção e virou um monstro mutante graças 
                     ao seu ferimento anterior
                     FINAL RUIM
                     - SORTE NO AMOR-\033[m''')
                 elif decisaoa3 == "4":
-                    escrever ('''\033[32m
+                    escrever('''\033[32m
                     FINAL "BOM"
                     -Soltaram a carta-
                     O Protótipo 3 era uma cura estabilizadora! Você se curou, parece um milagre!
@@ -185,7 +186,6 @@ while True:
                     Com os novos equipamentos poderiam viver tranquilamente, depois de alguns anos
                     você finalmente conseguiu replicar a cura para todos os outros infectados,
                     e a sociedade pode voltar ao normal como era antes, final feliz!''')
-
 
     if decisao0 == "3":
         escrever('''Enquanto buscava por recursos, um humano mutacionado apareceu! O que fazer?''')
