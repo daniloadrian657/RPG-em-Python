@@ -197,8 +197,8 @@ while True:
             while True:
                 print("\n❌ Opção inválida! Escolha apenas 1, 2, 3 ou 4.\n")
                 decisaob2 = input('''\033[34m
-                [1] Cortar
-                [2] Não cortar
+                [1] Atacar
+                [2] Tentar contato
                 Digite sua escolha: \033[m''')
                 if decisaob2 in ["1", "2"]:
                     break
