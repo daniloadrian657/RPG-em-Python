@@ -61,7 +61,7 @@ while True:
                 if decisaoa1 in ["1","2"]:
                     break
                 else:
-                    print("\n❌ Opção inválida! Escolha apenas 1, 2 ou 3.\n")
+                    print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
                     decisaoa1 = input('''\033[34m
                     [1] "Se aproximar com calma"
                     [2] "Atacar!"
@@ -89,7 +89,7 @@ while True:
                 Digite sua escolha: \033[m''')
             if decisaoa2 not in ["1", "2"]:
                 while True:
-                    print("\n❌ Opção inválida! Escolha apenas 1, 2 ou 3.\n")
+                    print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
                     decisaoa2 = input('''\033[34m
                     [1]Tratar o ferimento
                     [2]Continuar explorando
@@ -108,7 +108,7 @@ while True:
                 Digite sua escolha: \033[m''')
                 if decisaob0 not in ["1", "2"]:
                     while True:
-                        print("\n❌ Opção inválida! Escolha apenas 1, 2 ou 3.\n")
+                        print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
                         decisaob0 = input('''\033[34m
                         [1] Cortar
                         [2] Não cortar
@@ -195,7 +195,7 @@ while True:
         Digite sua escolha: \033[m''')
         if decisaob2 not in ["1", "2"]:
             while True:
-                print("\n❌ Opção inválida! Escolha apenas 1, 2, 3 ou 4.\n")
+                print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
                 decisaob2 = input('''\033[34m
                 [1] Atacar
                 [2] Tentar contato
