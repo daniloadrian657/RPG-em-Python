@@ -456,12 +456,3 @@ while True:
                             Final bom
                             -Casa Cheia-''')
                             exit()
-
-
-
-
-
-
-
-
-
