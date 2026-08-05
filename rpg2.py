@@ -275,7 +275,7 @@ while True:
                     - De volta a estaca zero-\033[m''')
             elif decisaob3 == "2":
                 escrever('''
-                Depois de uma viagem exaustiva com o Ouvido. Você chegar à comunidade, 
+                Depois de uma viagem exaustiva com o Ouvido. Você chega à comunidade, 
                 uma cidadela fortificada cheia de sobreviventes passando por dificuldades...
                 havia ocorrido uma pane elétrica, e alguns de seus recursos foram perdidos por isso.
                 Não parece que irão sobreviver por muito tempo.
@@ -283,7 +283,7 @@ while True:
                 O que fazer?''')
                 decisaoc1 = input('''\033[34m
                 [1] Não vou me arriscar... Pegarei o que preciso e vou embora!
-                [2] Conversar com essess sobreviventes!
+                [2] Conversar com esses sobreviventes!
                 Digite sua escolha: \033[m''')
                 if decisaoc1 not in ["1", "2"]:
                     while True:
