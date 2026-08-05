@@ -6,10 +6,11 @@ def escrever(texto, velocidade=0.02):
         print(letra, end="", flush=True)
         sleep(velocidade)
     print()
-
+final = "0"
 
 while True:
-    escrever('''                                  \033[33mAno 2067\033[m
+    escrever('''                                  
+                                    \033[33mAno 2067\033[m
 
     Uma coorporação chamada BREVES EAR COMPANY (BEC) havia desenvolvido uma arma química
     com o propósito de dar fim a terceira guerra que assolava o mundo. Mas nada ocorreu 
@@ -24,7 +25,8 @@ while True:
     estavam acabando e nos restava apenas uma opção... explorar o mundo devastado 5 anos após o ocorrido...
     ''')
 
-    decisao0 = input('''Ao sairem pela escotilha você percebe que a muito tempo não vê a luz do sol, ela o incomoda
+    decisao0 = input('''
+    Ao sairem pela escotilha você percebe que a muito tempo não vê a luz do sol, ela o incomoda
     aos olhos. Por sorte está no fim da tarde, logo mais a noite cairá, porém não parece que haverá luz pelo
     caminho "é melhor eu me apressar".
     \033[34m
@@ -48,7 +50,8 @@ while True:
 
     if decisao0 == "2":
 
-        escrever('''"O prédio central da BEC... onde tudo começou. Isolado no meio do caos,
+        escrever('''
+                "O prédio central da BEC... onde tudo começou. Isolado no meio do caos,
                 o lugar estava devastado, com o teto praticamente destruído, paredes com infiltrações
                 até o teto, que por sua vez, estava caindo por seus pedaços, aquele lugar continuava
                 sem vida higiênico. Ao adentrar no prédio você fica paralisado quando avista uma criatura
@@ -69,7 +72,8 @@ while True:
                     Digite sua escolha: \033[m''')
 
         if decisaoa1 == "1":
-            escrever('''\033[31mEm um mundo pós apocaliptico, tentar se aproximar de uma criatura
+            escrever('''\033[31m
+          Em um mundo pós apocaliptico, tentar se aproximar de uma criatura
           desconhecida não parece ser uma boa ideia. Você não foi incisivo quando precisava, 
           tentou ir com calma e a criatura o matou!
          Que burrice...
@@ -118,6 +122,7 @@ while True:
                             break
                 if decisaob0 == "1":
                     decisao0 = "3"
+                    final = "1"
                     escrever('''
                     Seu braço foi amputado com sucesso. Apesar da dor imensa,
                     você se sente bem. Depois de alguns dias de descanso, você aprende 
@@ -185,10 +190,13 @@ while True:
                     Nesta mesma sala você acha recursos de emergência, não podia ser melhor! 
                     Com os novos equipamentos poderiam viver tranquilamente, depois de alguns anos
                     você finalmente conseguiu replicar a cura para todos os outros infectados,
-                    e a sociedade pode voltar ao normal como era antes, final feliz!''')
+                    e a sociedade pode voltar ao normal como era antes, final feliz!\033[m
+                    \033[31m...Era oque você delirava enquanto espumava e se debatia
+                    no chão daquele laboratório. Parece que não valeu muito a pena.\033[m''')
 
     if decisao0 == "3":
-        escrever('''Enquanto buscava por recursos, um humano mutacionado apareceu! O que fazer?''')
+        escrever('''
+        Enquanto buscava por recursos, um humano mutacionado apareceu! O que fazer?''')
         decisaob2 = input('''\033[34m
         [1] Atacar!
         [2] Tentar contato
@@ -217,4 +225,243 @@ while True:
             ele responde agressivamente, mas conciente de suas palavras.
             Que surpresa! Conversaram por um tempo e, em troca do seu último pacote de comida,
             ele forneceu informação sobre uma grande comunidade humana vivendo 10 km ao sul,
-            atravessando um deserto escaldante.''')
+            atravessando um deserto escaldante.
+            Oque fazer?''')
+            decisaob3 = input('''\033[34m
+            [1] Não devo ir,Não vale a pena!
+            [2] Talvez valha a pena!
+            Digite sua escolha: \033[m''')
+            if decisaob3 not in ["1", "2"]:
+                while True:
+                    print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                    decisaob3 = input('''\033[34m
+                    [1] Não devo ir,Não vale a pena!
+                    [2] Talvez valha a pena!
+                           Digite sua escolha: \033[m''')
+                    if decisaob3 in ["1", "2"]:
+                        break
+            if decisaob3 == "1":
+                escrever ('''
+                Você e o Ouvido continuaram explorando a cidade devastada,
+                entrando em um mercado abandonado... mas espera, que barulho é esse? 
+                Tinha um mutante furioso no meio das estantes de produtos, ao lado do 
+                que parecia ser uma cesta básica...
+                "Droga, o que faço ?"''')
+                decisaob4 = input('''\033[34m
+                [1] Me escondo do Monstro
+                [2] Pego a cesta e corro!
+                Digite sua escolha: \033[m''')
+                if decisaob4 not in ["1", "2"]:
+                    while True:
+                        print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                        decisaob4 = input('''\033[34m
+                        [1] Me escondo do Monstro
+                        [2] Pego a cesta e corro!
+                        Digite sua escolha: \033[m''')
+                        if decisaob4 in ["1", "2"]:
+                            break
+                elif decisaob4 == "1":
+                    escrever('''\033[31m
+                    O mutante não é burro. Ele vê você atrás do balcão, 
+                    acho que ele está com tanta fome quanto você.
+                    Final Ruim 
+                    -Missão quase impossível-\033[m''')
+                elif decisaob4 == "2":
+                    escrever('''\033[34m
+                    Objetivo concluído finalmente! Você consegue suprimentos
+                    e volta para o bunker. Porém, ao abrir a cesta você percebe que os produtos 
+                    estão estragados. Parece que a fome irá perdurar por mais algum tempo.
+                    Final Neutro
+                    - De volta a estaca zero-\033[m''')
+            elif decisaob3 == "2":
+                escrever('''
+                Depois de uma viagem exaustiva com o Ouvido. Você chegar à comunidade, 
+                uma cidadela fortificada cheia de sobreviventes passando por dificuldades...
+                havia ocorrido uma pane elétrica, e alguns de seus recursos foram perdidos por isso.
+                Não parece que irão sobreviver por muito tempo.
+                O armazém deles aparentava estar com uma falha na segurança por conta da falta de energia.
+                O que fazer?''')
+                decisaoc1 = input('''\033[34m
+                [1] Não vou me arriscar... Pegarei o que preciso e vou embora!
+                [2] Conversar com essess sobreviventes!
+                Digite sua escolha: \033[m''')
+                if decisaoc1 not in ["1", "2"]:
+                    while True:
+                        print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                        decisaoc1 = input('''\033[34m
+                        [1] Me escondo do Monstro
+                        [2] Pego a cesta e corro!
+                        Digite sua escolha: \033[m''')
+                        if decisaoc1 in ["1", "2"]:
+                            break
+                elif decisaoc1 == "1":
+                    escrever ('''\033[31m
+                    Você roubou os poucos recursos daquele vilarejo
+                    e voltou para o bunker. Passou o resto da sua vida pensando 
+                    nos seus atos e como deixou aquelas pessoas para morrer, quando a comida acabou...
+                    decidiu acabar com seu sofrimento. O cachorro Ouvido comeu os restos do seu cadaver.
+                    Você é um lixo!
+                    Final ruim
+                    -Tirando doce de criança-\033[m''')
+                elif decisaoc1 == "2":
+                    escrever ('''
+                    Você aparece no local e se apresenta. No entanto, eles pareciam hostis
+                    com pessoas de fora... de repente eles o encurralam e o interrogam por suspeita de danificar
+                    a eletricidade do local.
+                    O que fazer?''')
+                    decisaoc2 = input('''\033[34m
+                    [1] Ataca-los
+                    [2] Se explicar
+                    Digite sua escolha: \033[m''')
+                    if decisaoc2 not in ["1", "2"]:
+                        while True:
+                            print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                            decisaoc2 = input('''\033[34m
+                            [1] Ataca-los
+                            [2] Se explicar
+                            Digite sua escolha: \033[m''')
+                            if decisaoc2 in ["1", "2"]:
+                                break
+                    elif decisaoc2 == "1":
+                        escrever('''\033[31m
+                        Quando você decidiu atacar, as pessoas revidaram
+                        com socos e chutes. O Ouvido tentou lhe defender ferozmente,
+                        mas acabou sendo chutado de todos os lados...
+                        Depois de preso, nem a companhia de seu amado cão teria mais...
+                        Final ruim
+                        -O Ouvido morreu!-\033[m''')
+                    elif decisaoc2 == "2":
+                        escrever('''
+                        Depois de explicar como foi parar ali, eles parecem
+                        em dúvida se você realmente quer apenas suprimentos e que não tem
+                        nada a ver com a pane elétrica do lugar.Enquanto eles parecem distraídos
+                        decidindo o que fazer com você. Você pensa em maneiras de se livrar dessa situação
+                        O que fazer?''')
+                        while final == "0":
+                            decisaoc3 = input('''\033[34m
+                            [1] Correr!
+                            [2] Esperar o veredito
+                            Digite sua escolha: \033[m''')
+                            if decisaoc3 == "1":
+                                final = "3"
+                            elif decisaoc3 == "2":
+                                final = "4"
+                            if decisaoc3 in ["1", "2"]:
+                                break
+                            elif decisaoc3 not in ["1", "2"]:
+                                print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                                decisaoc3 = input('''\033[34m
+                                [1] Correr!
+                                [2] Esperar o veredito
+                                Digite sua escolha: \033[m''')
+                                if decisaoc3 == "1":
+                                    final = "3"
+                                elif decisaoc3 == "2":
+                                    final = "4"
+                                if decisaoc3 in ["1", "2"]:
+                                    break
+                        while final == "1":
+                            decisaoc3 = input('''\033[34m
+                            [1] Correr!
+                            [2] Esperar o veredito
+                            [3] Oferecer ajuda!
+                            Digite sua escolha: \033[m''')
+                            if decisaoc3 == "1":
+                                final = "3"
+                            elif decisaoc3 == "2":
+                                final = "4"
+                            elif decisaoc3 == "3":
+                                final = "5"
+                            elif decisaoc3 in ["1", "2", "3"]:
+                                break
+                            elif decisaoc3 not in ["1", "2", "3"]:
+                                print("\n❌ Opção inválida! Escolha apenas 1, 2 ou 3.\n")
+                                decisaoc3 = input('''\033[34m
+                                [1] Correr!
+                                [2] Esperar o veredito
+                                [3] Oferecer ajuda!
+                                Digite sua escolha: \033[m''')
+                                if decisaoc3 == "1":
+                                    final = "3"
+                                elif decisaoc3 == "2":
+                                    final = "4"
+                                elif decisaoc3 == "3":
+                                    final = "5"
+                                elif decisaoc3 in ["1", "2", "3"]:
+                                    break
+                        if final == "3":
+                            escrever('''
+                            Você escapa da multidão que o cercava e eles começam a te caçar loucamente...
+                            Enquanto corria você ouve um latido... O Ouvido ficou para trás! 
+                            O que fazer?''')
+                            decisaofinal_1 = input('''\033[34m
+                            [1] Se entregar
+                            [2] Deixar o Ouvido
+                            Digite sua escolha: \033[m''')
+                            if decisaofinal_1 not in ["1", "2"]:
+                                while True:
+                                    print("\n❌ Opção inválida! Escolha apenas 1 ou 2.\n")
+                                    decisaofinal_1 = input('''\033[34m
+                                    [1] Ataca-los
+                                    [2] Se explicar
+                                    Digite sua escolha: \033[m''')
+                                    if decisaofinal_1 in ["1", "2"]:
+                                        break
+                            elif decisaofinal_1 == "1":
+                                escrever('''\033[34m
+                                Ao se entregar você é preso junto ao seu fiel escudeiro,
+                                a ração que eles dão na prisão é nojenta, mas comestível.
+                                Pelo menos vocês não estão mais sem comida.
+                                Final Neutro
+                                -Veja pelo lado bom-\033[m''')
+                            elif decisaofinal_1 == "2":
+                                escrever('''\033[31m
+                                Você foge covardemente e deixa o Ouvido para trás.
+                                Ao sair da cidadela, você se vê andando sozinho no deserto.
+                                Triste por abandonar seu amigo a culpa lhe consome e então você começa
+                                a alusinar que uma simples pedra é seu grande amigo.
+                                Final Ruim
+                                -Lobo Solitário-''')
+                        elif final == "4":
+                            escrever('''
+                            Você foi declarado culpado e preso imediatamente, 
+                            com o passar das semanas você viu que cada vez menos comida era servida
+                            na prisão. Depois de alguns meses foi relatado que iriam começar a matar 
+                            os presos para economizar os suprimentos. Quando chegou a sua vez, viu que a
+                            guilhotina estava bem ensanguentada, o povo parecia em fúria. Visto que,
+                            para eles, você foi o causador da fome que assolava a comunidade.''')
+                            escrever('''\033[31m
+                            Após a guilhotina, sua cabeça foi posta em praça pública
+                            para que todos apreciassem a suposta vingança
+                            Final ruim
+                            -One Piece is real-\033[m''')
+                        elif final == "5":
+                            escrever('''
+                            Enxergando sinceridade em suas palavras eles decidem
+                            lhe dar umas chance, você teria que ajudá-los
+                            a concertar seus problemas logísticos.''')
+                            escrever('''\033[32m
+                            Alguns meses depois, você conseguiu! Com os recursos
+                            escassos e um braço a menos, consertar uma pane elétrica não é fácil,
+                            mas você conseguiu! Após ganhar a confiança dos sobreviventes
+                            eles decidem ajudá-lo, indo até o seu bunker e estabelecendo uma base
+                            de operações na comunidade que lhe ajudou antes, visto que o conhecimento
+                            técnico deles é muito útil. Assim eles encheram seu bunker de suprimentos,
+                            plantações e muitas árvores frutíferas.\033[m''')
+                            escrever('''\033[32m
+                            Você ajudou os sobreviventes e ganhou a confiança de todas as comunidades,
+                            assim foi estabelecida uma grande e próspera aliança que cresce cada vez mais.
+                            Você se torna um de seus embaixadores com uma grande influência
+                            neste novo mundo que surge.
+                            Final bom
+                            -Casa Cheia-''')
+                            exit()
+
+
+
+
+
+
+
+
+
