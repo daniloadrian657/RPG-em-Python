@@ -360,7 +360,7 @@ while True:
                                     final = "3"
                                 elif decisaoc3 == "2":
                                     final = "4"
-                                if decisaoc3 in ["1", "2"]:
+                                elif decisaoc3 in ["1", "2"]:
                                     break
                         while final == "1":
                             decisaoc3 = input('''\033[34m
