@@ -138,7 +138,7 @@ while True:
                     Pelo menos o seu braço está no lugar.
                     -FINAL RUIM-
                     -MEDO DE AGULHAS-\033[m''')
-            elif decisaoa2 == "2":
+            elif decisaoa3 == "2":
                 escrever('''
                 Enquanto explorava o prédio você começa a sentir tontura.
                 A mordida estava the afetando... não conseguiria continuar assim.
@@ -151,14 +151,14 @@ while True:
                 [3] tomar o protótipo 2
                 [4] tomar o protótipo 3
                 Digite sua escolha: \033[m''')
-                if decisaoa2 not in ["1", "2", "3", "4"]:
+                if decisaoa3 not in ["1", "2", "3", "4"]:
                     while True:
                         print("\n❌ Opção inválida! Escolha apenas 1, 2, 3 ou 4.\n")
                         decisaob0 = input('''\033[34m
                         [1] Cortar
                         [2] Não cortar
                         Digite sua escolha: \033[m''')
-                        if decisaoa2 in ["1", "2", "3", "4"]:
+                        if decisaoa3 in ["1", "2", "3", "4"]:
                             break
                 if decisaoa3 == "1":
                     escrever('''\033[31m
