@@ -154,9 +154,11 @@ while True:
                 if decisaoa3 not in ["1", "2", "3", "4"]:
                     while True:
                         print("\n❌ Opção inválida! Escolha apenas 1, 2, 3 ou 4.\n")
-                        decisaob0 = input('''\033[34m
-                        [1] Cortar
-                        [2] Não cortar
+                        decisaoa3 = input('''\033[34m
+                        [1] Não tomar nenhum
+                        [2] tomar o protótipo 1
+                        [3] tomar o protótipo 2
+                        [4] tomar o protótipo 3
                         Digite sua escolha: \033[m''')
                         if decisaoa3 in ["1", "2", "3", "4"]:
                             break
