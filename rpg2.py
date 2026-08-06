@@ -12,16 +12,16 @@ while True:
     escrever('''                                  
                                     \033[33mAno 2067\033[m
 
-    Uma coorporação chamada BREVES EAR COMPANY (BEC) havia desenvolvido uma arma química
+    Uma corporação chamada BREVES EAR COMPANY (BEC) havia desenvolvido uma arma química
     com o propósito de dar fim a terceira guerra que assolava o mundo. Mas nada ocorreu 
-    como planejado... uma falha de calculo fez com que o mundo se afunda-se em uma era de
+    como planejado... uma falha de cálculo fez com que o mundo se afundasse em uma era de
     trevas... muitas pessoas morreram e as que sobreviveram tiveram suas aparências desfiguradas.
     ''', )
 
-    escrever('''Antes do colapso ouveram rumores sobre a possivel catastrofe eminente, muitos não 
+    escrever('''Antes do colapso houve rumores sobre a possível catástrofe eminente, muitos não 
     deram ouvidos. Por outro lado, eu me isolei no subterrâneo... montei um bunker e me escondi
-    junto ao meu fiel amigo canino "Ouvido". O mundo estava sendo destruido... O bunker seria 
-    onde viveriámos até o final de nossas vidas. Mas nada é tranquilo para sempre. Nossos suprimentos
+    junto ao meu fiel amigo canino "Ouvido". O mundo estava sendo destruído... O bunker seria 
+    onde viveríamos até o final de nossas vidas. Mas nada é tranquilo para sempre. Nossos suprimentos
     estavam acabando e nos restava apenas uma opção... explorar o mundo devastado 5 anos após o ocorrido...
     ''')
 
@@ -82,9 +82,9 @@ while True:
             escrever('''
                 "Você se abaixa lentamente para pegar uma barra de ferro que
                 estava no chão, assim que a pegar, a criatura parte pra cima.
-                Em certo ponto, você consegue se desvenchilhar e acerta-la
+                Em certo ponto, você consegue se desvencilhar e acerta-la
                 na cabeça, mas ela consegue morder seu braço
-                antes de cair morta no chão... 'Droga! isso dói' Ouvesse
+                antes de cair morta no chão... 'Droga! isso dói' Ouvem-se
                 barulhos pelos corredores do lugar, a criatura não estava
                 sozinha..."
                  O que fazer agora?''')
@@ -132,7 +132,7 @@ while True:
                     De volta para a cidade...''')
                 elif decisaob0 == "2":
                     escrever('''\033[31m
-                    Os sobreviventes decidiram the expulsar do abrigo para a segurança de todos.
+                    Os sobreviventes decidiram lhe expulsar do abrigo para a segurança de todos.
                     Porém, a infecção foi mais rápida que o previsto, você se transforma numa besta
                     sedenta por sangue e acaba matando todos do local.
                     Pelo menos o seu braço está no lugar.
@@ -141,7 +141,7 @@ while True:
             elif decisaoa2 == "2":
                 escrever('''
                 Enquanto explorava o prédio você começa a sentir tontura.
-                A mordida estava the afetando... não conseguiria continuar assim.
+                A mordida estava lhe afetando... não conseguiria continuar assim.
                 Um pouco mais em frente você encontra uma sala com soros experimentais...
                 havia 3 soros. Você começa a pensar se vale a tentativa.
                 O que fazer?''')
@@ -164,22 +164,22 @@ while True:
                             break
                 if decisaoa3 == "1":
                     escrever('''\033[31m
-                    Depois não criar coragem para tentar se salvar,
-                    o invitável acontece. Você se transforma em um infectado.
+                    Depois de não criar coragem para tentar se salvar,
+                    o inevitável acontece. Você se transforma em um infectado.
                     Pouco antes disso acontecer você se prende a uma mesa para não
                     machucar ninguém que pudesse querer se aventurar por lá
                     FINAL RUIM
                     -ALTRUISTA-\033[m''')
                 elif decisaoa3 == "2":
                     escrever('''\033[34m
-                    O Protótipo 1 era um mutagenico que intensificou
+                    O Protótipo 1 era um mutagênico que intensificou
                     e estabilizou a mutação. Você virou um mutante, mas mantendo
                     a sua consciência... Isso é bom... certo?
                     Final neutro
                     -HOMEM FERA-\033[m''')
                 elif decisaoa3 == "3":
                     escrever('''\033[34m
-                    O Prototipo 2 era uma jarro com água envelhecida por 5 anos.
+                    O Protótipo 2 era um jarro com água envelhecida por 5 anos.
                     Você tomou, teve uma infecção e virou um monstro mutante graças 
                     ao seu ferimento anterior
                     FINAL RUIM
@@ -228,7 +228,7 @@ while True:
             Que surpresa! Conversaram por um tempo e, em troca do seu último pacote de comida,
             ele forneceu informação sobre uma grande comunidade humana vivendo 10 km ao sul,
             atravessando um deserto escaldante.
-            Oque fazer?''')
+            O que fazer?''')
             decisaob3 = input('''\033[34m
             [1] Não devo ir,Não vale a pena!
             [2] Talvez valha a pena!
@@ -301,7 +301,7 @@ while True:
                     Você roubou os poucos recursos daquele vilarejo
                     e voltou para o bunker. Passou o resto da sua vida pensando 
                     nos seus atos e como deixou aquelas pessoas para morrer, quando a comida acabou...
-                    decidiu acabar com seu sofrimento. O cachorro Ouvido comeu os restos do seu cadaver.
+                    decidiu acabar com seu sofrimento. O cachorro Ouvido comeu os restos do seu cadáver.
                     Você é um lixo!
                     Final ruim
                     -Tirando doce de criança-\033[m''')
@@ -421,7 +421,7 @@ while True:
                                 Você foge covardemente e deixa o Ouvido para trás.
                                 Ao sair da cidadela, você se vê andando sozinho no deserto.
                                 Triste por abandonar seu amigo a culpa lhe consome e então você começa
-                                a alusinar que uma simples pedra é seu grande amigo.
+                                a alucinar que uma simples pedra é seu grande amigo.
                                 Final Ruim
                                 -Lobo Solitário-''')
                         elif final == "4":
@@ -440,7 +440,7 @@ while True:
                         elif final == "5":
                             escrever('''
                             Enxergando sinceridade em suas palavras eles decidem
-                            lhe dar umas chance, você teria que ajudá-los
+                            lhe dar uma chance, você teria que ajudá-los
                             a concertar seus problemas logísticos.''')
                             escrever('''\033[32m
                             Alguns meses depois, você conseguiu! Com os recursos
