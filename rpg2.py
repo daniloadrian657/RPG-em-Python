@@ -138,7 +138,7 @@ while True:
                     Pelo menos o seu braço está no lugar.
                     -FINAL RUIM-
                     -MEDO DE AGULHAS-\033[m''')
-            elif decisaoa3 == "2":
+            elif decisaoa2 == "2":
                 escrever('''
                 Enquanto explorava o prédio você começa a sentir tontura.
                 A mordida estava the afetando... não conseguiria continuar assim.
