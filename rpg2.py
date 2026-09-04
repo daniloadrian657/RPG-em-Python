@@ -6,9 +6,11 @@ def escrever(texto, velocidade=0.02):
         print(letra, end="", flush=True)
         sleep(velocidade)
     print()
-final = "0"
+
 
 while True:
+    final = 0
+    
     escrever('''                                  
                                     \033[33mAno 2067\033[m
 
